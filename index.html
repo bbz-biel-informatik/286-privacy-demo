@@ -33,6 +33,12 @@
         border-bottom: 2px solid rgb(180, 210, 225);
       }
     </style>
+
+    <script>
+      function submit() {
+        alert("Daten nicht gespeichert.")
+      }
+    </script>
   </head>
 
   <body>
@@ -41,46 +47,55 @@
 
       <h3>Aktualisierung Schülerdatenbank</h3>
 
-      <label>Vorname</label>
+      <p>
+        <em>Angaben mit einem * sind obligatorisch</em>
+      </p>
+
+      <label>* Vorname</label>
       <input type="text">
 
-      <label>Nachname</label>
+      <label>* Nachname</label>
       <input type="text">
 
-      <label>Vollständige Adresse</label>
+      <label>* Vollständige Adresse</label>
       <input type="text">
 
-      <label>Geburtsdatum</label>
+      <label>* Geburtsdatum</label>
       <input type="text">
 
-      <label>E-Mail</label>
+      <label>* E-Mail</label>
       <input type="text">
 
-      <label>Handynummer</label>
+      <label>* Handynummer</label>
       <input type="text">
 
-      <label>Passfoto</label>
+      <label>* Passfoto</label>
       <input type="file">
 
-      <label>Namen der Eltern</label>
+      <label>* Namen der Eltern</label>
       <input type="text">
 
-      <label>Namen der Geschwister</label>
+      <label>* Namen der Geschwister</label>
       <input type="text">
 
-      <label>Handynummer des besten Freundes/Freundin</label>
+      <label>* Handynummer des besten Freundes/Freundin</label>
       <input type="text">
 
-      <label>Ausbildung</label>
+      <label>* Ausbildung</label>
       <input type="text">
 
-      <label>Aufenthaltsorte und Zeitpunkte am Wochenende</label>
+      <label>Beziehungsstatus</label>
+      <input type="text">
+
+      <label>* Aufenthaltsorte und Zeitpunkte am Wochenende</label>
       <input type="text">
 
       <label>Fotos vom Wochenende</label>
       <input type="file">
       <input type="file">
       <input type="file">
+
+      <button onclick="submit">Speichern</button>
     </div>
   </body>
 </html>
